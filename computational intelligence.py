@@ -22,7 +22,7 @@ numerical_features = ['date', 'quarter', 'team', 'smv', 'wip', 'over_time',
 df['actual_productivity'] = (df['actual_productivity'] >= 0.75).astype(int)
 
 # ---------------------------------------------------------------
-# Train / validation / test split (numpy only — no sklearn)
+# Train / validation / test split 
 # 70% train, 15% validation, 15% test
 # ---------------------------------------------------------------
 np.random.seed(42)
