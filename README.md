@@ -38,7 +38,7 @@ I turned this into binary classification: was the team's actual productivity at 
 
 ![Train vs. validation loss](attachment:train_val_loss_plot.png)
 
-## What the curves actually show
+## What the curves show
 
 Train and validation loss track each other closely early on (gap of ~0.016 at epoch 6,000), but the gap widens to ~0.062 by epoch 149,000 as train loss keeps falling faster than validation loss. That's a genuine, mild overfitting signal — the network is picking up some patterns specific to the training split rather than fully generalisable ones. It's not severe: validation loss never reverses and starts climbing in this range, it just decelerates relative to train loss. There's also a small non-monotonic wobble in training loss around epochs 63,000 and 113,000–115,000 (a brief uptick before resuming its decline) — a minor instability you'd expect from plain gradient descent at a fixed learning rate, and a natural candidate to fix with momentum or a decay schedule.
 
