@@ -36,7 +36,7 @@ I turned this into binary classification: was the team's actual productivity at 
 | Recall | 0.6961 |
 | F1 | 0.7634 |
 
-![Train vs. validation loss](attachment:train_val_loss_plot.png)
+![Train vs. validation loss](attachment:train_loss.png)
 
 ## What the curves show
 
